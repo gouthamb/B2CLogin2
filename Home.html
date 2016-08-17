@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign in</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: favicon > -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/global.css" rel="stylesheet" type="text/css" />
+    <style>
+     label{display: inline-block; width:200px;}
+      input{display: inline-block; width:300px;}
+      .password-label label{width:auto;}
+      .entry{padding: 0px 175px;}
+      .intro{text-align:center;padding: 0px 20px}
+      .divider,.create,.buttons{ text-align:center;}
+      .zeiss_title{color: #0000cc;text-align:center}
+      .buttons,.password-label{padding-top: 10px}
+      .zeisslogo{height: 100px;}
+      .infylogo{height: 55px;}
+      .logo{color:#999999}
+    </style>
+  </head>
+  <script>
+   
+var url=window.location.href;
+var token=url.split("id_token");
+document.getElementById("token_value").innerHTML=token(1);
+  </script>
+  <body>
+    <div class="container unified_container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div align="center" class="logo">
+                <img alt="Zeiss Logo"  src="https://raw.githubusercontent.com/gouthamb/B2CLogin/master/images/zeisslogo.png" class="zeisslogo"/>
+               <!-- <img alt="Zeiss Logo" class="login-logo" src="http://localhost/wingtip/images/logo.png" /> -->
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <div align="center">
+              <h2 class="Welcome">Hi User</h2>
+              <h4 class="Welcome">You have successfully logged into the Zeiss Demo Application - 2.</h4>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <div align="center" class="logo">
+                <p>Demo Application developed by</p>
+                <img alt="Infy Logo"  src="https://raw.githubusercontent.com/gouthamb/B2CLogin/master/images/infylogo.png" class="infylogo"/>
+                <p id="token_value"></p>
+               <!-- <img alt="Zeiss Logo" class="login-logo" src="http://localhost/wingtip/images/logo.png" /> -->
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
